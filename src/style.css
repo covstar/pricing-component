@@ -1,0 +1,100 @@
+body{
+    background-color: hsl(230, 100%, 99%);
+}
+h1{
+    color: hsl(227, 35%, 25%);
+}
+p{
+    color: hsl(225, 20%, 60%);
+}
+/* slider input  */
+.slider {
+    -webkit-appearance: none;
+    height: 10px;
+    border-radius: 5px;
+    background: linear-gradient(to right,
+                hsl(174, 77%, 80%) 0%,
+                hsl(174, 77%, 80%) 50%,
+                hsl(224, 65%, 95%) 0%,
+                hsl(224, 65%, 95%) 100%);
+}
+
+.slider:hover {
+    opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 100%;
+    background-color: hsl(174, 91%, 42%);
+    background-image: url("../images/icon-slider.svg");
+    box-shadow: 0px 12px 15px 6px hsl(174, 95%, 77%);
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+
+
+
+.discount{
+    color: hsl(15, 100%, 70%);
+    background-color: hsl(14, 92%, 95%);
+}
+button{
+    background-color: hsl(227, 35%, 25%);
+    color: hsl(226, 100%, 87%);
+}
+.input-switch+label {
+    position: relative;
+    height: 22px;
+    margin-top: -1px;
+    width: 3rem;
+    border-radius: 100px;
+    background-color: hsl(223, 50%, 87%);
+    transition: left 0.5s;
+}
+
+.input-switch {
+    display: none;
+}
+.input-switch+label span.grip {
+    position: absolute;
+    top: 3px;
+    cursor: pointer;
+    left: 10%;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 100%;
+    transition: .3s all;
+   
+}
+
+.input-switch+label span.switch-label {
+    position: absolute;
+    display: inline-block;
+    top: 0px;
+    left: 10px;
+    width: 50px;
+    overflow: hidden;
+    text-align: center;
+    transition: opacity 0.5s;
+}
+
+.input-switch:checked+label {
+    background-color: hsl(174, 86%, 45%);
+}
+
+.input-switch:checked+label span.grip {
+    left: 60%;
+
+
+}
+
+.input-switch:checked+label span.switch-label {
+    opacity: 0;
+}
