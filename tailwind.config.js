@@ -24,8 +24,8 @@ module.exports = {
       // => @media (min-width: 768px) { ... }
     },
     backgroundImage: {
-        'img': "url('./images/bg-pattern.svg')",
-        'headImg': "url('./images/pattern-circles.svg')",
+        'img': "url('../images/bg-pattern.svg')",
+        'headImg': "url('../images/pattern-circles.svg')",
 
       }
     },
